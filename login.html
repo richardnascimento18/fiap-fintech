@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #feffe4;
+        --color-primary-100: #fbffc4;
+        --color-primary-200: #f5ff90;
+        --color-primary-300: #e8ff50;
+        --color-primary-400: #ddff33;
+        --color-primary-500: #bae600;
+        --color-primary-600: #90b800;
+        --color-primary-700: #6c8b00;
+        --color-primary-800: #566d07;
+        --color-primary-900: #485c0b;
+        --color-primary-950: #253400;
+        --font-poppins: 'Poppins';
+        --font-adlam: 'ADLaM Display';
+      }
+    </style>
+    <title>Cashiq</title>
+  </head>
+  <body class="overflow-y-hidden">
+    <section class="flex w-[100%] h-[100vh]">
+      <div class="flex flex-col items-center w-[100%] h-[100%]">
+        <img
+          src="./assets/img.jpg"
+          class="w-[100%] h-[100%] object-cover box-border"
+        />
+      </div>
+      <div class="flex flex-col items-center w-[100%] h-[100%]">
+        <div
+          class="flex flex-col items-center justify-center gap-[1.5rem] w-fit h-[100%]"
+        >
+          <h1 class="font-adlam text-[3rem] font-medium text-primary-400">
+            Cashiq
+          </h1>
+          <h2 class="font-poppins text-[3rem] font-medium text-primary-50">
+            Faça Login
+          </h2>
+          <p class="font-poppins text-[1.5rem] font-normal text-[#999999]">
+            Já possui uma conta? Faça o seu login abaixo!
+          </p>
+          <form class="flex flex-col items-center gap-[2.25rem] w-[100%]">
+            <div class="flex flex-col justify-around gap-[1.5rem] w-[100%]">
+              <label
+                for="email"
+                class="font-poppins text-[1.5rem] font-bold text-primary-50"
+                >Email:</label
+              >
+              <input
+                type="text"
+                id="email"
+                class="w-[100%] h-[4rem] bg-primary-50 rounded-sm font-poppins text-[1.125rem] font-light px-[.5rem] outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col justify-around gap-[1.5rem] w-[100%]">
+              <label
+                for="psw"
+                class="font-poppins text-[1.5rem] font-bold text-primary-50"
+                >Senha:</label
+              >
+              <input
+                type="password"
+                id="psw"
+                class="w-[100%] h-[4rem] bg-primary-50 rounded-sm font-poppins text-[1.125rem] px-[.5rem] font-light outline-none"
+              />
+            </div>
+            <p
+              class="font-poppins text-[1.5rem] font-normal text-[#999999] text-center"
+            >
+              Não possui uma conta?
+              <a href="/" class="text-primary-400">Registre-se aqui.</a>
+            </p>
+            <button
+              class="w-fit rounded-sm cursor-pointer font-poppins text-[1.5rem] px-[2.25rem] py-[0.75rem] font-bold bg-primary-400 text-primary-950"
+            >
+              Log In
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</html>
